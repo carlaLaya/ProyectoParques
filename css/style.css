@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --colorPrincipal: rgb(161, 172, 194);
+    --tipografia: 16px;
+} 
+.videoprincipal{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-fluid{
+    background-color: var(--colorPrincipal)
+}
+.actividad_lanin{
+    text-align: center;
+    margin: 30px;
+}
+.caption{
+    text-align: center;
+}
+.card-img-top{
+    height: 200px;
+    width: 200px;
+}
+.btn-primary{
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.mapas{
+    text-align: center;
+    padding: 20px;    
+    margin: 20px;
+}
+.card{
+    margin: 30px;
+    width: 400px;
+    height: 300px;
+}
+.cardlanin {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid black;
+}
+h3{
+    text-align: center;
+}
+.titulo{ 
+    font-size: large;
+    margin: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer ul{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+    color: rgb(42, 49, 45);
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    background: rgb(68, 55, 55);
+    background-color: var(--colorPrincipal);
+}     
+footer{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+    color: rgb(42, 49, 45);
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+
+}             
