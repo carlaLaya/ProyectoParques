@@ -1,38 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700;1,900&family=Trocchi&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Proyecto Parques</title>
 </head>
-<body>
-    <form action="" method="post" class="formulario">
-        <h1>Formulario de contacto</h1>
-    <div>
-            <label for="Nombre">Nombre:<label>
-            <input type="text" id="nombre/">
-            <label for="apellido">Apellido:<label>
-            <input type="text" id="apellido/" placeholder="Escriba aquí su apellido">
+<header>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><h4>Republica Argentina</h4></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><h5>Inicio</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html"><h5>Contàctenos</h5></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<body class="body_contacto">
+<div class="formulario">
+        <div class="contact_form">
+        <h2>Formulario de contacto</h2>
+        <form action="submeter-formulario.php" method="post">
+            <p> <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                    placeholder="Escribe tu nombre">
+            </p>
+            <p> <label for="telefone" class="colocar_telefono">Teléfono</label>
+                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>
+            </p>
+            <p>
+                <label for="email" class="colocar_email">Email<span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                    placeholder="Escribe tu Email">
+            </p>
+            <p><label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja aquí tu comentario..."></textarea>
+            </p><button type="submit" name="enviar_formulario" id="enviar">
+                <p>Enviar</p>
+            </button>
+            <p class="aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>
+        </form>
     </div>
-    <div>
-        <label for="">Eliga su turno</label>
-        <label for="TM">Turno mañana:</label>
-        <input type="radio" name="turno" id="TM">
-        <label for="TT">Turno Tarde:</label>
-        <input type="radio" name="turno" id="TT">
-        <label for="TN">Turno Noche:</label>
-        <input type="radio" name="turno" id="TN">
-    </div>
-    <div>
-        <label for="">A que curso quiere inscribirse</label>
-        <label for="PWI">Programador web inicial</label>
-        <input type="checkbox" name="curso" id="PWI">
-        <label for="PWA">Programador web avanzado</label>
-        <input type="checkbox" name="curso" id="PWA">
-    </div>
-
-    </form>
-    
+</div>
+</div>
 </body>
+<footer>
+    <div class="footer">
+      <ul>
+        <li>
+          <h6>Dirección Regional Patagonia Norte</h6>
+        </li>
+        <li>Director: Abg. Juan Ignacio Inza</li>
+        <li>Dirección: Vice Almirante O'Connor 1188 (8400) San Carlos de Bariloche, Río Negro.</li>
+        <li>Teléfonos: 0294-4425436 / 0294-4429727</li>
+        <li>Correo electrónico: drp@apn.gob.ar</li>
+      </ul>
+    </div>
+  </footer>
 </html>
