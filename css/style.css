@@ -1,5 +1,5 @@
 :root{
-    --colorPrincipal: #7abde9
+    --colorPrincipal: #7abde9;
     --tipografia: 16px;
 } 
 body{
@@ -61,7 +61,6 @@ body{
     margin: 20px;
     border: 1px solid black;
 }
-
 .titulo{  
     color: black;
     font-size: large;
@@ -143,9 +142,6 @@ button{
 	width: 420px;   
   cursor: pointer;
 }
-button p{
-	color: black; 
-}
 .aviso{
 	font-size: 13px;  
 	color: #0e0e0e;  
@@ -156,24 +152,23 @@ h4{
 	color: #0e0e0e;
     text-align: center;
 }
-
 p{
 	font-size: 14px; 
 	color: #0e0e0e; 
 }
 .webkit-input-placeholder {
- color: #a8a8a8;
+ color: var(--colorPrincipal);
 }
 .webkit-textarea-placeholder {
- color: #a8a8a8;
+ color: var(--colorPrincipal);
 }
 .formulario input:focus{
 	outline:0;
-	border: 1px solid #5448d8;
+	border: 1px solid var(--colorPrincipal);
 }
 .formulario textarea:focus{
 	outline:0;
-	border: 1px solid #97d848;
+	border: 1px solid var(--colorPrincipal);
 }
 .body_contacto{
 	height: 100%; 
