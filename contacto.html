@@ -14,28 +14,34 @@
     <title>Proyecto Parques</title>
 </head>
 <header>
-    <section>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"><h5>Inicio</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html"><h5>Contàctenos</h5></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Actividades, areas, etc..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
+  <section class="menu">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"><h4>Inicio</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"><h4>Contàctenos</h4></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Actividades, areas, etc..." aria-label="Search">
+            <button class="btn btn-primary" target="_blank">Buscar</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </section>
+  <br>
+</header>
+  <div class="dia_hora">
+    <p id="demo"></p>
+  </div>
       <div class="titulo">
         <h2>Parques Nacionales de la región Patagónica</h2>
       </div>
@@ -62,7 +68,8 @@
             <p><label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
                     placeholder="Deja aquí tu comentario..."></textarea>
-            </p><button type="submit" name="enviar_formulario" id="enviar">
+            </p>
+            <button type="submit" name="enviar_formulario" id="enviar">
                 <p>Enviar</p>
             </button>
             <p class="aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>
