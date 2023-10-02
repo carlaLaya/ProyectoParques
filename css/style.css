@@ -64,7 +64,6 @@ body{
 .titulo{  
     color: black;
     font-size: large;
-    margin: 10px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -134,7 +133,7 @@ button{
 	border-style: solid; 
 	border-radius: 10px;	
 	width: 420px;   
-  cursor: pointer;
+    cursor: pointer;
 }
 .aviso{
 	font-size: 13px;  
